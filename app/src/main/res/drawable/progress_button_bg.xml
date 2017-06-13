@@ -2,25 +2,25 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
 	<item android:state_pressed="true" android:state_selected="true">
 		<shape>
-			<solid android:color="#8010c6e7" />
+			<solid android:color="@color/status_change_pressed" />
 			<corners android:radius="@dimen/f5dp"/>
 		</shape>
 	</item>
 	<item android:state_pressed="true">
 		<shape>
-			<solid android:color="#80F23B77" />
+			<solid android:color="@color/main_style_color_pressed" />
 			<corners android:radius="@dimen/f5dp"/>
 		</shape>
 	</item>
 	<item android:state_selected="true">
 		<shape>
-			<solid android:color="@color/effect_status_use" />
+			<solid android:color="@color/status_change" />
 			<corners android:radius="@dimen/f5dp"/>
 		</shape>
 	</item>
 	<item>
 		<shape>
-			<solid android:color="@color/main_style_color_ex" />
+			<solid android:color="@color/main_style_color" />
 			<corners android:radius="@dimen/f5dp"/>
 		</shape>
 	</item>

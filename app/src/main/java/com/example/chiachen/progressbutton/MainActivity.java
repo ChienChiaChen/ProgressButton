@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
 
 		mActionButtonText.setText("Download");
 		mActionButton.setSelected(false);
+		mActionButton.setEnabled(true);
 		setButtonClickListener(onClickListener, mActionButton);
 	}
 
@@ -75,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
 	private void handleDownloadEnd() {
 		mActionButtonText.setText("Downloaded");
 		mActionButton.setSelected(true);
+		mActionButton.setEnabled(false);
 		mActionButtonProgress.setVisibility(View.GONE);
 		android.widget.Toast.makeText(MainActivity.this, "Downloaded", Toast.LENGTH_SHORT).show();
 		mHandler.sendEmptyMessageDelayed(STATUS_INIT, ANIMATION_TIME);
